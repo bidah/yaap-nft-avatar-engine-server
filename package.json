@@ -1,0 +1,65 @@
+{
+  "name": "yaap_engine",
+  "version": "0.0.1",
+  "description": "yaap avatar nft engine",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "layers/**/*",
+      "node_modules/**/*",
+      "src/**/*"
+    ]
+  },
+  "scripts": {
+    "start": "node dist/src/app.js",
+    "build": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --ignore build/ -e js,ts,json src/app.ts",
+    "dev-node": "ts-node src/app.ts",
+    "redis": "redis-server",
+    "proxy": "ngrok http -subdomain=312567321 3001",
+    "postinstall": "tsc"
+  },
+  "author": "Rodrigo Figueroa",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/ioredis": "^4.28.7",
+    "@types/node": "^16.11.6",
+    "@types/ramda": "^0.27.62",
+    "@types/url-parse": "^1.4.7",
+    "awaity": "^1.0.0",
+    "axios": "^0.26.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.1",
+    "bullmq": "^1.50.5",
+    "canvas": "^2.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.1",
+    "firebase": "9.1.3",
+    "firebase-admin": "^10.0.0",
+    "ioredis": "^4.28.3",
+    "moralis": "^0.0.176",
+    "nanoid": "^3.2.0",
+    "nft.storage": "^5.2.0",
+    "ramda": "^0.27.1",
+    "sha1": "^1.1.1",
+    "ts-node": "^10.4.0",
+    "url-parse": "^1.5.4"
+  },
+  "volta": {
+    "node": "14.17.0",
+    "npm": "6.14.6"
+  },
+  "engines": {
+    "node": "14.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}
