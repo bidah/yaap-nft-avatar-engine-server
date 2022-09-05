@@ -1,19 +1,10 @@
 {
-  "name": "yaap_engine",
+  "name": "yaap_nft_art_engine",
   "version": "0.0.1",
-  "description": "yaap avatar nft engine",
-  "main": "index.js",
-  "bin": "index.js",
-  "pkg": {
-    "assets": [
-      "layers/**/*",
-      "node_modules/**/*",
-      "src/**/*"
-    ]
-  },
+  "description": "yaap nft art engine",
+  "main": "src/app.ts",
   "scripts": {
     "start": "node dist/src/app.js",
-    "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --ignore build/ -e js,ts,json src/app.ts",
     "dev-node": "ts-node src/app.ts",
