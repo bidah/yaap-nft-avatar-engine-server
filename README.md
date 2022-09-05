@@ -54,3 +54,5 @@ Add all `.env` required variables from the following services
 
 
 
+## Acknowledgement
+This software started as a fork from [Hashlips Art Engine](https://github.com/HashLips/hashlips_art_engine). Code evolved into moving the engine out of its CLI form but its still the base to learning to create an engine extended into bringing it to a server and enabling usage directly with a Dapp frontend. So big thanks to Hashlip and all it's contribution to the space. Code attribution reference are in `LICENSE` file.
